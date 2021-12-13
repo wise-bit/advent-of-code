@@ -1,2 +1,3 @@
-# advent-of-code-2020
-Solutions for Advent Of Code 2020
+# Advent of Code
+
+Solutions for Advent of Code over the years by wise-bit.
