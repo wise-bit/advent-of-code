@@ -4,6 +4,8 @@ sol = 0
 files = []
 expanded = []
 
+sample = "2333133121414131402"
+
 
 def merge_blocks_combined(files):
   a = []
@@ -49,6 +51,7 @@ def move_numbers_to_left(l):
 def move_blocks_to_left(l):
   limit = len(l) - 1
   while limit > 0:
+    # print(limit)
     left = 0
     right = limit
 
@@ -66,12 +69,14 @@ def move_blocks_to_left(l):
         l[right] = temp[:len(l[left])]
 
         l.insert(left + 1, [-1] * diff)
-        left, right = 0, len(l) - 1
+        # left, right = 0, len(l) - 1
 
       else:
         left += 1
 
     limit -= 1
+    while len(l[limit]) == 0 or (len(l[limit]) > 0 and l[limit][0] == -1):
+      limit -= 1
 
   return l
 
@@ -96,7 +101,7 @@ with open("input09.txt", "r") as file:
 expanded = merge_blocks_separated(files)
 expanded = move_blocks_to_left(expanded)
 expanded = sum(expanded, [])
-# print("".join(str(e) for e in expanded).replace("-1", "."))
+print("".join(str(e) for e in expanded).replace("-1", "."))
 
 sol = checksum(expanded)
 
