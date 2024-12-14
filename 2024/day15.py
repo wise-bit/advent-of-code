@@ -8,7 +8,7 @@ def fn():
   pass
 
 
-with open("inputXX.txt", "r") as file:
+with open("input15.txt", "r") as file:
   lines = file.read().split(sep)
 
   for line in lines:
