@@ -188,6 +188,25 @@ def transform_grid(g):
   return new_g
 
 
+def part1(g):
+  g_copy = [x[:] for x in g]
+  bot = get_bot_pos(g_copy)
+  g_moved = move_bot_orig(g_copy, moves, bot)
+
+  return box_coords_sum_orig(g_moved)
+
+
+def part2(g):
+  g_copy = [x[:] for x in g]
+  g2 = transform_grid(g_copy)
+  bot = get_bot_pos(g2)
+  g_moved = move_bot_trans(g2, moves, bot)
+
+  return box_coords_sum_trans(g_moved)
+
+
+# main
+
 with open("input15.txt", "r") as file:
   parts = file.read().split("\n\n")
 
@@ -196,21 +215,8 @@ with open("input15.txt", "r") as file:
 
   moves = list("".join(parts[1].split(sep)))
 
+sol1 = part1(g)
+print("part 1:", sol1)
 
-# main
-
-# part 1
-
-g_copy = [x[:] for x in g]
-bot = get_bot_pos(g_copy)
-g_moved = move_bot_orig(g_copy, moves, bot)
-print("part 1:", box_coords_sum_orig(g_moved))
-
-# part 2
-
-g_copy = [x[:] for x in g]
-g2 = transform_grid(g_copy)
-bot = get_bot_pos(g2)
-g_moved = move_bot_trans(g2, moves, bot)
-
-print("part 2:", box_coords_sum_trans(g_moved))
+sol2 = part2(g)
+print("part 2:", sol2)
