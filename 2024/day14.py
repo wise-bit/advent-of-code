@@ -89,8 +89,8 @@ def save_art(dims, bots_pos, time_step, temp_folder):
   image.save(image_filename)
 
 
-def visualize_save(dims, bots, time, temp_folder):
-  for t in range(1, time + 1):
+def visualize_save(dims, bots, time_start, time_end, temp_folder):
+  for t in range(time_start, time_end + 1):
     moved_bots = move_bots(dims, bots, t)
     save_art(dims, moved_bots, t, temp_folder)
 
@@ -119,10 +119,11 @@ print(sol)
 #
 # manual inspection of bots
 
-# time_steps = 100
-# temp_folder = mkdtemp(dir="./tmp/")
-# print(temp_folder)
-# visualize_save(dims, bots, time_steps, temp_folder)
+time_steps_start = 7037
+time_steps_end = time_steps_start + 1
+temp_folder = mkdtemp(dir="./tmp/")
+print(temp_folder)
+visualize_save(dims, bots, time_steps_start, time_steps_end, temp_folder)
 
 test_time = 10000
 s = []
