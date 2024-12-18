@@ -12,7 +12,7 @@ def fn():
 
 g = []
 
-with open("inputXX.txt", "r") as file:
+with open("input19.txt", "r") as file:
   lines = file.read().split(sep)
 
   for line in lines:
