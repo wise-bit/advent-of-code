@@ -1,10 +1,15 @@
 sep = "\n"
 
-sol1 = 0
-sol2 = 0
-
 
 def fn():
+  pass
+
+
+def part1():
+  pass
+
+
+def part2():
   pass
 
 
@@ -18,7 +23,9 @@ with open("inputXX.txt", "r") as file:
   for line in lines:
     pass
 
-print(g)
 
+sol1 = 0
 print("part 1:", sol1)
+
+sol2 = 0
 print("part 2:", sol2)
