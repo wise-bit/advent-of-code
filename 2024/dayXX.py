@@ -15,7 +15,7 @@ def part2():
 
 # main
 
-g = []
+a = []
 
 with open("inputXX.txt", "r") as file:
   lines = file.read().split(sep)
@@ -24,8 +24,8 @@ with open("inputXX.txt", "r") as file:
     pass
 
 
-sol1 = 0
+sol1 = part1()
 print("part 1:", sol1)
 
-sol2 = 0
+sol2 = part2()
 print("part 2:", sol2)
