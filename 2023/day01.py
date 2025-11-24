@@ -1,7 +1,7 @@
 sep = "\n"  # separator
 c = 0  # counter
 
-with open("input1.txt", "r") as file:
+with open("input01.txt", "r") as file:
     d = {
         "one": "1",
         "two": "2",
