@@ -2,6 +2,12 @@
 
 *solutions for **Advent of Code** over the years by yours truly*
 
-ykno what time of the year it is
+---
 
-one of these years im gonna finish the entire month i swear its gonna happen
+years attempted:
+
+- 2020
+- 2021
+- 2023
+- 2024 *(completed during AoC)*
+- 2025

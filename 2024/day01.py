@@ -4,7 +4,7 @@ c = 0  # counter
 left = []
 right = []
 
-with open("input1.txt", "r") as file:
+with open("input01.txt", "r") as file:
   lines = file.read().split(sep)
   
   for line in lines:
