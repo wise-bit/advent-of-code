@@ -5,6 +5,9 @@ def fn():
   pass
 
 
+# ---
+
+
 def part1():
   pass
 
@@ -13,19 +16,17 @@ def part2():
   pass
 
 
-# main
+if __name__ == "__main__":
+  a = []
 
-a = []
+  with open("inputXX.txt", "r") as file:
+    lines = file.read().split(sep)
 
-with open("inputXX.txt", "r") as file:
-  lines = file.read().split(sep)
+    for line in lines:
+      pass
 
-  for line in lines:
-    pass
+  sol1 = part1()
+  print("part 1:", sol1)
 
-
-sol1 = part1()
-print("part 1:", sol1)
-
-sol2 = part2()
-print("part 2:", sol2)
+  sol2 = part2()
+  print("part 2:", sol2)
