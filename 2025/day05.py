@@ -45,7 +45,7 @@ def part2(id_ranges):
     id_ranges_int.append((start, end))
 
   id_ranges_int.sort()
-  # print(range_ints[0])
+  # print(id_ranges_int[0])
 
   merged_rs = [list(id_ranges_int[0])]
   # print(merged_rs)
