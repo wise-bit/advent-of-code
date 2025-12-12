@@ -10,4 +10,4 @@ years attempted:
 - 2021
 - 2023
 - 2024 *(completed during AoC)*
-- 2025
+- 2025 *(completed during AoC)*
